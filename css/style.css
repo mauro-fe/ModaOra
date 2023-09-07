@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300;500;900&family=Viaoda+Libre&display=swap');
+
+:root {
+  --font-titulos: 'Viaoda Libre', cursive;
+  --color-menu: #425564;
+  --color-background-header: #162028;
+  --color-texto-menu: #425564;
+  --color-background-com-imagem: #003d52;
+  --color-background-footer: #0b171f;
+  --color-texto-footer: #6f8597;
+  --color-white: #fff;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.hero {
+  background-image: url(../img/topo.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: calc(100vh - 5rem);
+  margin-top: 5rem;
+
+}
+
+.section-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--color-background-header);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+}
+
+.section-hero__title {
+  font-size: 3.7em;
+  margin-left: 2em;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.hero__navbar-list {
+  display: flex;
+  gap: 4em;
+  margin-left: 10em;
+  list-style-type: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: .8rem;
+  font-weight: bold;
+}
+
+.hero__navbar-list li a {
+  color: var(--color-texto-menu);
+  text-decoration: none;
+}
+
+.main {
+  color: black;
+  margin-top: 5rem;
+  font-weight: 300;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-main__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.section-main__text h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.section-main__text p {
+  width: 52%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.section-main__sobre {
+  display: flex;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+
+.section-main__sobre h3 {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-menu);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.section-main__sobre p {
+  text-align: center;
+}
+
+.section-main__moda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/bg_detalhe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85rem;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.section-main__moda-text {
+  width: 80%;
+}
+
+.section-main__moda-text h2 {
+  font-size: 6em;
+  color: var(--color-white);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: 'Italiana', serif;
+}
+
+.section-main__moda-text p {
+  font-size: 2em;
+  color: var(--color-white);
+  font-weight: 300;
+  width: 74%;
+}
+
+.rodape {
+  background-color: var(--color-background-footer);
+  padding: 2.5rem;
+}
+
+.rodape h3 {
+  color: var(--color-texto-footer);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: .2em;
+}
