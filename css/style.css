@@ -2,111 +2,143 @@
 
 :root {
   --font-titulos: 'Viaoda Libre', cursive;
-  --color-menu: #425564;
   --color-background-header: #162028;
-  --color-texto-menu: #425564;
+  --color-texto-menu: #5c7c92;
   --color-background-com-imagem: #003d52;
   --color-background-footer: #0b171f;
   --color-texto-footer: #6f8597;
   --color-white: #fff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   font-size: 62.5%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6em;
   color: #555;
+  /* font-size: 1.6em;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 300; */
+  font: 300 1.6em 'Roboto', sans-serif;
 }
 
-.hero {
-  background-image: url(../img/topo.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: calc(100vh - 5rem);
-  margin-top: 5rem;
-
+.wrappContainer-dark {
+  background-color: rgba(10, 40, 60, .9);
 }
 
-.section-hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
+.wrappContainer-dark2 {
   background-color: var(--color-background-header);
-  position: fixed;
-  top: 0;
-  width: 100vw;
-
 }
 
-.section-hero__title {
+.wrappContainer-light {
+  background-color: #fcfcfc;
+}
+
+.wrappContainer-position {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.header_title {
   font-size: 3.7em;
-  margin-left: 2em;
   color: var(--color-white);
   font-weight: 300;
 }
 
-.hero__navbar-list {
+.header_title a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.header_nav-list {
   display: flex;
-  gap: 4em;
-  margin-left: 10em;
   list-style-type: none;
   font-size: 1.5em;
   text-transform: uppercase;
-  letter-spacing: .8rem;
+  letter-spacing: .5rem;
   font-weight: bold;
+  gap: 10rem;
 }
 
-.hero__navbar-list li a {
+.header_nav-list li a {
   color: var(--color-texto-menu);
   text-decoration: none;
 }
 
-.main {
+.hero_image {
+  width: 100%;
+  height: calc(100vh - 10rem);
+}
+
+.section_modas {
   color: black;
-  margin-top: 5rem;
   font-weight: 300;
+  text-align: center;
+  padding-top: 15rem;
 }
 
-.section-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
+.modas_content {
+  margin: 0 6rem;
+  flex: 1;
 }
 
-.section-main__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.section-main__text h2 {
+.modas_content h2 {
   font-size: 2em;
   font-weight: 300;
+  margin-bottom: 4rem;
 }
 
-.section-main__text p {
-  width: 52%;
+.modas_content p {
   text-align: center;
   line-height: 3rem;
 }
 
-.section-main__sobre {
+.modasContainer {
   display: flex;
   margin-top: 5rem;
   gap: 3rem;
+  justify-content: center;
+}
+
+.modas_card {
+  flex: 1;
+}
+
+.modas_card img {
+  display: block;
+  width: 100%;
+}
+
+.modas_card_content {
+  border: 1px solid #ccc;
+  border-top: transparent;
+  padding: 2rem;
+}
+
+.modas_card_content p {
+  margin-top: 1rem;
 }
 
 .section-main__sobre h3 {
@@ -121,40 +153,36 @@ body {
   text-align: center;
 }
 
-.section-main__moda {
+.wrappContainer-img {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(../img/bg_detalhe.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85rem;
+  height: 90rem;
   justify-content: center;
   margin-top: 8rem;
 }
 
-.section-main__moda-text {
-  width: 80%;
-}
-
-.section-main__moda-text h2 {
-  font-size: 6em;
+.section-main_moda-text h2 {
+  font-size: 7rem;
   color: var(--color-white);
   font-weight: 300;
   text-transform: uppercase;
   font-family: 'Italiana', serif;
 }
 
-.section-main__moda-text p {
-  font-size: 2em;
+.section-main_moda-text p {
+  font-size: 3rem;
   color: var(--color-white);
   font-weight: 300;
-  width: 74%;
+  padding-right: 6rem;
+  margin-top: 4rem;
 }
 
 .rodape {
-  background-color: var(--color-background-footer);
-  padding: 2.5rem;
+  padding: 4rem;
 }
 
 .rodape h3 {

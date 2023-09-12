@@ -9,70 +9,93 @@
 
   <title>Moda Ora</title>
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <header class="hero">
-    <section class="section-hero">
-      <h1 class="section-hero__title">Moda Ora</h1>
-      <nav class="hero__navbar">
-        <ul class="hero__navbar-list">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+  <div>
+    <div class="wrappContainer-dark wrappContainer-position">
+      <header class="header container">
+        <h1 class="header_title"><a href="#">Moda Ora</a></h1>
+        <nav class="header_nav">
+          <ul class="header_nav-list">
+            <li><a href="#moda">Tipos de moda</a></li>
+            <li><a href="#sobreamoda">Sobre a moda</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wrappContainer">
+      <section class="hero">
+        <img src="img/topo.jpg" alt="Mulher sentada olhando pra você" class="hero_image">
+      </section>
+    </div>
+    <div class="wrappContainer-light" id="moda">
+      <section class="section_modas container">
+        <div class="modas_content">
+          <h2>A escolha certa para momentos especiais</h2>
+          <p>Com uma equipe de designers talentosos e experientes, criamos roupas que combinam qualidade, estilo e
+            conforto.
+            Utilizamos materiais de alta qualidade e técnicas de fabricação de ponta para garantir que cada peça seja
+            durável e bonita. Desde vestidos até blusas, calças e saias, nossas coleções são criadas para pessoas
+            modernas
+            que desejam se sentir confiantes e sofisticadas. Nós nos esforçamos para oferecer a melhor experiência de
+            compra
+            possível, garantindo a satisfação dos nossos clientes em cada etapa do processo.</p>
+        </div>
 
-  <main class="main">
-    <section class="section-main">
-      <div class="section-main__text">
-        <h2>A escolha certa para momentos especiais</h2>
-        <p>Com uma equipe de designers talentosos e experientes, criamos roupas que combinam qualidade, estilo e
-          conforto.
-          Utilizamos materiais de alta qualidade e técnicas de fabricação de ponta para garantir que cada peça seja
-          durável e bonita. Desde vestidos até blusas, calças e saias, nossas coleções são criadas para pessoas modernas
-          que desejam se sentir confiantes e sofisticadas. Nós nos esforçamos para oferecer a melhor experiência de
-          compra
-          possível, garantindo a satisfação dos nossos clientes em cada etapa do processo.</p>
-      </div>
-
-      <div class="section-main__sobre">
-        <div>
-          <img src="/img/modelo2.jpg" alt="">
-          <h3>Vest Romasa</h3>
-          <p>Forte & carismático</p>
+        <div class="modasContainer">
+          <article class="modas_card">
+            <img src="/img/modelo2.jpg" alt="">
+            <div class="modas_card_content">
+              <h3>Vest Romasa</h3>
+              <p>Forte & carismático</p>
+            </div>
+          </article>
+          <article class="modas_card">
+            <img src="/img/modelo3.jpg" alt="">
+            <div class="modas_card_content">
+              <h3>Jacket Fima</h3>
+              <p>Personalidade marcante</p>
+            </div>
+          </article>
+          <article class="modas_card">
+            <img src="/img/modelo4.jpg" alt="">
+            <div class="modas_card_content">
+              <h3>Jacket Black Kira</h3>
+              <p>Empoderamento atraente</p>
+            </div>
+          </article>
         </div>
-        <div>
-          <img src="/img/modelo3.jpg" alt="">
-          <h3>Jacket Fima</h3>
-          <p>Personalidade marcante</p>
+      </section>
+    </div>
+    <div class="wrappContainer wrappContainer-img" id="sobreamoda">
+      <section class="section-main_moda container">
+        <div class="section-main_moda-text">
+          <h2>Quando os detalhes importam simplesmente moda</h2>
+          <p>Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de
+            expressão
+            e
+            uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer peças que atendam
+            aos
+            mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a criação de cada detalhe,
+            nossa
+            equipe se dedica a produzir roupas que se destacam pela sua elegância e sofisticação. Aqui, você
+            encontrará
+            peças que unem o melhor da moda com a atenção aos detalhes que faz toda a diferença. Descubra uma nova
+            forma
+            de
+            se expressar através da moda conosco.</p>
         </div>
-        <div>
-          <img src="/img/modelo4.jpg" alt="">
-          <h3>Jacket Black Kira</h3>
-          <p>Empoderamento atraente</p>
-        </div>
-      </div>
-    </section>
-    <section class="section-main__moda">
-      <div class="section-main__moda-text">
-        <h2>Quando os detalhes importam simplesmente moda</h2>
-        <p>Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de expressão e
-          uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer peças que atendam aos
-          mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a criação de cada detalhe, nossa
-          equipe se dedica a produzir roupas que se destacam pela sua elegância e sofisticação. Aqui, você encontrará
-          peças que unem o melhor da moda com a atenção aos detalhes que faz toda a diferença. Descubra uma nova forma
-          de
-          se expressar através da moda conosco.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="rodape">
-    <h3>Copyright © modaora.com</h3>
-  </footer>
+      </section>
+    </div>
+    <div class="wrappContainer-dark2">
+      <footer class="rodape container">
+        <h3>Copyright © modaora.com</h3>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>
