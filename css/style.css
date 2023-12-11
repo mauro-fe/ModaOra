@@ -86,6 +86,11 @@ body {
   text-decoration: none;
 }
 
+.header_nav-list li a:hover {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+}
+
 .hero_image {
   width: 100%;
   height: calc(100vh - 10rem);
@@ -125,9 +130,20 @@ body {
   flex: 1;
 }
 
+.modas_card-2 {
+  overflow: hidden;
+}
+
 .modas_card img {
   display: block;
   width: 100%;
+  opacity: 50%;
+  transition: opacity .7s, transform .7s;
+}
+
+.modas_card img:hover {
+  opacity: 100%;
+  transform: scale(110%);
 }
 
 .modas_card_content {
